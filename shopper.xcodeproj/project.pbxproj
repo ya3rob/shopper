@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2D592DDE2168F82A001BF458 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D592DDD2168F82A001BF458 /* AppDelegate.swift */; };
-		2D592DE02168F82A001BF458 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D592DDF2168F82A001BF458 /* ViewController.swift */; };
+		2D592DE02168F82A001BF458 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D592DDF2168F82A001BF458 /* MainVC.swift */; };
 		2D592DE32168F82A001BF458 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D592DE12168F82A001BF458 /* Main.storyboard */; };
 		2D592DE52168F82E001BF458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D592DE42168F82E001BF458 /* Assets.xcassets */; };
 		2D592DE82168F82E001BF458 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D592DE62168F82E001BF458 /* LaunchScreen.storyboard */; };
+		2D592DF22168FBDC001BF458 /* CurrenyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D592DF12168FBDC001BF458 /* CurrenyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2D592DDA2168F82A001BF458 /* shopper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shopper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D592DDD2168F82A001BF458 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D592DDF2168F82A001BF458 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2D592DDF2168F82A001BF458 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		2D592DE22168F82A001BF458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D592DE42168F82E001BF458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D592DE72168F82E001BF458 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D592DE92168F82E001BF458 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D592DF12168FBDC001BF458 /* CurrenyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		2D592DDC2168F82A001BF458 /* shopper */ = {
 			isa = PBXGroup;
 			children = (
+				2D592DF02168FB8A001BF458 /* View */,
+				2D592DEF2168FB69001BF458 /* Controller */,
 				2D592DDD2168F82A001BF458 /* AppDelegate.swift */,
-				2D592DDF2168F82A001BF458 /* ViewController.swift */,
 				2D592DE12168F82A001BF458 /* Main.storyboard */,
 				2D592DE42168F82E001BF458 /* Assets.xcassets */,
 				2D592DE62168F82E001BF458 /* LaunchScreen.storyboard */,
 				2D592DE92168F82E001BF458 /* Info.plist */,
 			);
 			path = shopper;
+			sourceTree = "<group>";
+		};
+		2D592DEF2168FB69001BF458 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2D592DDF2168F82A001BF458 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2D592DF02168FB8A001BF458 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2D592DF12168FBDC001BF458 /* CurrenyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D592DE02168F82A001BF458 /* ViewController.swift in Sources */,
+				2D592DF22168FBDC001BF458 /* CurrenyTextField.swift in Sources */,
+				2D592DE02168F82A001BF458 /* MainVC.swift in Sources */,
 				2D592DDE2168F82A001BF458 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
